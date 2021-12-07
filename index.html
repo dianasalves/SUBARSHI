@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Aplicação gráfica "SUBARSHI" por Rui Vaz e Diana Alves
+        </title>
+        <link rel=stylesheet href="css/index.css" />
+    </head>
+    <body>
+        <img id="bambuuImage" src="./Imagens/bambuuImage.jpg" width="0" height="0"></img> 
+        <script src="./JavaScript/inflate.min.js"></script>
+        <script src="./JavaScript/three.js"></script>
+        <script src="./JavaScript/FBXLoader.js" type="module"></script>
+        <script src="./JavaScript/GLTFLoader.js" type="module"></script>
+        <script src="./JavaScript/OrbitControls.js" type="module"></script>
+        <script src="./JavaScript/app.js" type="module"></script>
+
+        <div id="inicio">
+            <h1>Bem vindo a SUBARSHI!</h1>
+            Para iniciar o jogo clique no botão.<br>
+            <br>
+            <a id="botao-comecar" class="fechar">Começar</a>
+        </div>
+
+        <div id="pausa">
+            <h1>Pausa</h1>
+            Jogo em pausa, para continuar prima o botão ou a tecla ENTER.<br>Para recomeçar prima a tecla R.<br>
+            <br>
+            <a id="botao-continuar" class="fechar">Continuar</a>
+        </div>
+
+        <div id="ganhou">
+            <h1>Vitória!</h1>
+            Parabéns, ganhou o jogo!<br>
+            <br>
+            <a id="botao-recomecar" class="fechar">Recomeçar</a>
+        </div>
+
+        <div id="instrucoes">
+            <h1>Instruções</h1>
+            <br>O objetivo do jogo é colocar todos pratos na mesa correta antes de acabar o tempo.<br><br>
+            <b>W, A, S, D</b> - Mover o boneco pela cena.<br>
+            <b>Espaço</b> - Arragar ou largar um prato, quando este se encontra perto do boneco. (apenas é possível agarrar um prato de cada vez e só é possível largar o prato numa mesa vazia ou lugar do balcão vazio)<br>
+            <b>R</b> - Recomeçar o jogo.<br>
+            <b>Enter</b> - Pausar/continuar o jogo.<br>
+            <br>
+            <b>Configurações da Câmara</b><br>
+            <b>O</b> - Selecionar a vista da cena com câmara ortográfica, visualizando a cena de cima.<br>
+            <b>P</b> - Selecionar a vista da cena com câmara perspetiva, visualizando a cena em terceira pessoa.<br>
+            <b>+</b> - Fazer zoom in.<br>
+            <b>-</b> - Fazer zoom out.<br>
+            <b>Setas</b> - Movimentar a câmara.<br>
+            <br>
+            <b>Configurações da Iluminação</b><br>
+            <b>1</b> - Ligar/desligar a luz direcional.<br>
+            <b>2</b> - Ligar/desligar a luz ambiente.<br>
+            <b>3</b> - Ligar/desligar o foco de luz.<br>
+            <b>4</b> - Ligar/desligar a luz pontual.<br>
+            <b>0</b> - Voltar ao esquema de iluminação inicial.<br>
+            <br>
+            <b>I</b> - Abrir/fechar as instruções.<br>
+            <br>
+            <a id="botao-fechar" class="fechar">Fechar</a>
+        </div>
+    </body>
+    </html>
+</html>
